@@ -6,6 +6,10 @@ It gives applications a small, inspectable evaluator layer instead of a black-bo
 score: YAML configuration, structured JSON output, exact learner-text evidence,
 and an [OpenAI Responses API](https://developers.openai.com/api/docs/guides/structured-outputs) adapter.
 
+Built at Hack Admission: [https://hack-admission.com](https://hack-admission.com)
+This repository was extracted from the IELTS AI workflow inside Hack Admission and
+kept separate as a reusable open-source core.
+
 > This project is for IELTS preparation. It is not affiliated with, endorsed by,
 > or an official product of IELTS, IDP, the British Council, or Cambridge.
 
@@ -19,6 +23,14 @@ and an [OpenAI Responses API](https://developers.openai.com/api/docs/guides/stru
 
 No official IELTS test materials, Cambridge books, audio, learner records, or
 production data are included.
+
+## Origin
+
+Hack Admission is the product and education platform where this evaluator core
+was originally built and used:
+
+- Site: [https://hack-admission.com](https://hack-admission.com)
+- IELTS workspace: [https://hack-admission.com/ielts](https://hack-admission.com/ielts)
 
 ## Quick start
 
