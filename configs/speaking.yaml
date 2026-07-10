@@ -1,0 +1,24 @@
+version: 1
+name: IELTS Speaking Transcript Review
+provider: openai
+model: gpt-4o-mini
+
+evaluation:
+  kind: speaking
+  max_output_tokens: 1400
+  instructions: >
+    Evaluate a transcript of an IELTS Speaking answer. Treat the transcript as
+    imperfect evidence: do not make strong pronunciation claims from text alone.
+    Do not assess it like an essay and do not punish natural fillers or direct,
+    conversational language. Focus on whether the answer is clear, natural,
+    relevant, and sufficiently developed for its stated part.
+  criteria:
+    - Fluency and Coherence
+    - Lexical Resource
+    - Grammatical Range and Accuracy
+    - Pronunciation (low-confidence unless audio evidence is supplied)
+
+output:
+  format: json_schema
+  include_evidence: true
+  include_improvement_plan: true

@@ -1,0 +1,43 @@
+{
+  "name": "open-ielts-ai",
+  "version": "0.1.0",
+  "description": "Configurable, self-hosted IELTS AI evaluation core for Writing, Speaking, and Reading review.",
+  "type": "module",
+  "bin": {
+    "open-ielts-ai": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "configs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "evaluate": "tsx src/cli.ts evaluate",
+    "dry-run": "tsx src/cli.ts evaluate --dry-run",
+    "test": "npm run check && node --test tests/*.test.mjs"
+  },
+  "keywords": [
+    "ielts",
+    "ai",
+    "education",
+    "writing-feedback",
+    "speaking-feedback",
+    "openai"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "yaml": "^2.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "question": "Question: Why did the author mention the survey? Learner answer: To prove that all students prefer online classes. Correct answer: To show that preferences depended on the type of activity. Passage excerpt: The survey found that learners preferred online lectures for flexibility, while most still chose face-to-face workshops for practical tasks.",
+  "response": "The learner selected an absolute statement and missed the contrast between lectures and workshops in the passage.",
+  "metadata": {
+    "module": "reading",
+    "question_type": "multiple_choice"
+  }
+}
